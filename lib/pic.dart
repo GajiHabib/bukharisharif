@@ -10,7 +10,8 @@ class Pik extends StatelessWidget {
     return Card(
       child: InkWell
       (onTap:() {
-        Navigator.push(context,MaterialPageRoute(builder: (context) => Bukhari1(pdfLocation:info[index].pdfLocation,),));
+        Navigator.push(context,MaterialPageRoute(builder: (context) => 
+        Bukhari1(pdfLocation:info[index].pdfLocation, index: index,),));
       },
         child: Image.asset(info[index].img,fit: BoxFit.fill,)),
     );
