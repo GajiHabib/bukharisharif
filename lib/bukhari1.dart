@@ -10,8 +10,11 @@ class Bukhari1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text(info[index].name)),),
-      body: SfPdfViewer.asset(pdfLocation),
+      backgroundColor: Colors.amber.shade100,
+      appBar: AppBar(
+        backgroundColor: Colors.blue.shade400,
+        title: Center(child: Text(info[index].name,style: TextStyle(fontSize: 30,color: Colors.white),)),),
+      body: SfPdfViewer.network(pdfLocation),
     );
   }
 }

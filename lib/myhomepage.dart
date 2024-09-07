@@ -10,20 +10,24 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber.shade100,
       appBar: AppBar(
+        backgroundColor: Colors.blueAccent.shade200,
         title: Center(
       child: Text('বুখারী শরীফ',
-      style: TextStyle(color: Colors.brown, fontSize: 40))),
+      style: TextStyle(color: Colors.white, fontSize: 40))),
       ),
-      body: GridView.builder(
-        shrinkWrap: true,
-        itemCount: 7,
-
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 0.75),
-        itemBuilder: (context, index) {
-          return Pik(index: index);
-        },
+      body: Padding(
+        padding: const EdgeInsets.all(12),
+        child: GridView.builder(
+          shrinkWrap: true,
+         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount
+         (crossAxisCount:2),
+          itemCount: 7,
+          itemBuilder: (context, index) {
+            return Pik(index: index);
+          },
+        ),
       ),
     );
   }

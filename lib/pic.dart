@@ -13,7 +13,7 @@ class Pik extends StatelessWidget {
         Navigator.push(context,MaterialPageRoute(builder: (context) => 
         Bukhari1(pdfLocation:info[index].pdfLocation, index: index,),));
       },
-        child: Image.asset(info[index].img,fit: BoxFit.fill,)),
+        child: Image.network(info[index].img,fit: BoxFit.fill,)),
     );
   }
 }

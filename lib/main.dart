@@ -1,4 +1,5 @@
 import 'package:bsharif/myhomepage.dart';
+import 'package:bsharif/splashsreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,9 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
       ),
-      home:MyHomePage(),
+      home:SplashScreen(),
     );
   }
 }
-
 

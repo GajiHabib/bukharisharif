@@ -10,6 +10,7 @@
 analyzer:
   errors:
     must_be_immutable: ignore ignore
+    prefer_const_constructors: ignore
     prefer_const_constructors_in_immutables: ignore
     unused_import: ignore
 include: package:flutter_lints/flutter.yaml
