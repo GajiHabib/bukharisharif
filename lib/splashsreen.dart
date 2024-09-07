@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds:5),(){
+    Timer(Duration(seconds:4),(){
       Navigator.pushReplacement(context,MaterialPageRoute(builder:
        (context) => MyHomePage(),));
     });
@@ -26,14 +26,14 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Colors.amber.shade100,
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
             child: Image.asset('assets/habib.jpeg'),
           ),
-
+SizedBox(height: 15),
 Text('GM Habibur Rahman',style: TextStyle(fontSize: 40,color: Colors.red),),
-
+SizedBox(height:8),
 Text(' 01731264779',style: TextStyle(fontSize: 40)),
             CircularProgressIndicator(
               color: Colors.black,

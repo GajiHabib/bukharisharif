@@ -18,7 +18,7 @@ class MyHomePage extends StatelessWidget {
       style: TextStyle(color: Colors.white, fontSize: 40))),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(15),
         child: GridView.builder(
           shrinkWrap: true,
          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount
